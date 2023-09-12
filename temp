@@ -1,0 +1,164 @@
+        if (degreesRotated == 0) {
+            for (int i = 0; i < algorithm.length(); i++) {
+                if (algorithm.charAt(i) == 'U') {
+                    U();
+                    newAlgorithm.append("U ");
+                } else if (algorithm.charAt(i) == 'I') {
+                    Up();
+                    newAlgorithm.append("U' ");
+                } else if (algorithm.charAt(i) == 'F') {
+                    F();
+                    newAlgorithm.append("F ");
+                } else if (algorithm.charAt(i) == 'G') {
+                    Fp();
+                    newAlgorithm.append("F' ");
+                } else if (algorithm.charAt(i) == 'R') {
+                    R();
+                    newAlgorithm.append("R ");
+                } else if (algorithm.charAt(i) == 'T') {
+                    Rp();
+                    newAlgorithm.append("R' ");
+                } else if (algorithm.charAt(i) == 'L') {
+                    L();
+                    newAlgorithm.append("L ");
+                } else if (algorithm.charAt(i) == 'K') {
+                    Lp();
+                    newAlgorithm.append("L' ");
+                } else if (algorithm.charAt(i) == 'D') {
+                    D();
+                    newAlgorithm.append("D ");
+                } else if (algorithm.charAt(i) == 'S') {
+                    Dp();
+                    newAlgorithm.append("D' ");
+                } else if (algorithm.charAt(i) == 'B') {
+                    B();
+                    newAlgorithm.append("B ");
+                } else if (algorithm.charAt(i) == 'N') {
+                    Bp();
+                    newAlgorithm.append("B' ");
+                }
+            }
+        } else if (degreesRotated == 90) {
+             for (int i = 0; i < algorithm.length(); i++) {
+                if (algorithm.charAt(i) == 'U') {
+                    U();
+                    newAlgorithm.append("U ");
+                } else if (algorithm.charAt(i) == 'I') {
+                    Up();
+                    newAlgorithm.append("U' ");
+                } else if (algorithm.charAt(i) == 'F') {
+                    F();
+                    newAlgorithm.append("R ");
+                } else if (algorithm.charAt(i) == 'G') {
+                    Fp();
+                    newAlgorithm.append("R' ");
+                } else if (algorithm.charAt(i) == 'R') {
+                    R();
+                    newAlgorithm.append("B ");
+                } else if (algorithm.charAt(i) == 'T') {
+                    Rp();
+                    newAlgorithm.append("B' ");
+                } else if (algorithm.charAt(i) == 'L') {
+                    L();
+                    newAlgorithm.append("F ");
+                } else if (algorithm.charAt(i) == 'K') {
+                    Lp();
+                    newAlgorithm.append("F' ");
+                } else if (algorithm.charAt(i) == 'D') {
+                    D();
+                    newAlgorithm.append("D ");
+                } else if (algorithm.charAt(i) == 'S') {
+                    Dp();
+                    newAlgorithm.append("D' ");
+                } else if (algorithm.charAt(i) == 'B') {
+                    B();
+                    newAlgorithm.append("L ");
+                } else if (algorithm.charAt(i) == 'N') {
+                    Bp();
+                    newAlgorithm.append("L' ");
+                }
+            }
+        } else if (degreesRotated == 180) {
+             for (int i = 0; i < algorithm.length(); i++) {
+                if (algorithm.charAt(i) == 'U') {
+                    U();
+                    newAlgorithm.append("U ");
+                } else if (algorithm.charAt(i) == 'I') {
+                    Up();
+                    newAlgorithm.append("U' ");
+                } else if (algorithm.charAt(i) == 'F') {
+                    F();
+                    newAlgorithm.append("B ");
+                } else if (algorithm.charAt(i) == 'G') {
+                    Fp();
+                    newAlgorithm.append("B' ");
+                } else if (algorithm.charAt(i) == 'R') {
+                    R();
+                    newAlgorithm.append("L ");
+                } else if (algorithm.charAt(i) == 'T') {
+                    Rp();
+                    newAlgorithm.append("L' ");
+                } else if (algorithm.charAt(i) == 'L') {
+                    L();
+                    newAlgorithm.append("R ");
+                } else if (algorithm.charAt(i) == 'K') {
+                    Lp();
+                    newAlgorithm.append("R' ");
+                } else if (algorithm.charAt(i) == 'D') {
+                    D();
+                    newAlgorithm.append("D ");
+                } else if (algorithm.charAt(i) == 'S') {
+                    Dp();
+                    newAlgorithm.append("D' ");
+                } else if (algorithm.charAt(i) == 'B') {
+                    B();
+                    newAlgorithm.append("F ");
+                } else if (algorithm.charAt(i) == 'N') {
+                    Bp();
+                    newAlgorithm.append("F' ");
+                }
+            }
+        } else if (degreesRotated == 270) {
+             for (int i = 0; i < algorithm.length(); i++) {
+                if (algorithm.charAt(i) == 'U') {
+                    U();
+                    newAlgorithm.append("U ");
+                } else if (algorithm.charAt(i) == 'I') {
+                    Up();
+                    newAlgorithm.append("U' ");
+                } else if (algorithm.charAt(i) == 'F') {
+                    F();
+                    newAlgorithm.append("R ");
+                } else if (algorithm.charAt(i) == 'G') {
+                    Fp();
+                    newAlgorithm.append("R' ");
+                } else if (algorithm.charAt(i) == 'R') {
+                    R();
+                    newAlgorithm.append("F ");
+                } else if (algorithm.charAt(i) == 'T') {
+                    Rp();
+                    newAlgorithm.append("F' ");
+                } else if (algorithm.charAt(i) == 'L') {
+                    L();
+                    newAlgorithm.append("B ");
+                } else if (algorithm.charAt(i) == 'K') {
+                    Lp();
+                    newAlgorithm.append("B' ");
+                } else if (algorithm.charAt(i) == 'D') {
+                    D();
+                    newAlgorithm.append("D ");
+                } else if (algorithm.charAt(i) == 'S') {
+                    Dp();
+                    newAlgorithm.append("D' ");
+                } else if (algorithm.charAt(i) == 'B') {
+                    B();
+                    newAlgorithm.append("L ");
+                } else if (algorithm.charAt(i) == 'N') {
+                    Bp();
+                    newAlgorithm.append("L' ");
+                }
+            }
+        }
+
+        return newAlgorithm;
+    }

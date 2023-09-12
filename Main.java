@@ -12,6 +12,7 @@ public class Main {
         cube.populateColors(null);
 
         System.out.println(cube.solveCube());
+        System.out.println(cube.cubeSolved());
     }
 
 }

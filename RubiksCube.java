@@ -62,7 +62,6 @@ public class RubiksCube {
         }
 
         solveInstructions.append(solveBottomCross());
-        System.out.println("Bottom Cross: " + solveInstructions);
         solveInstructions.append(solveBottomCorners());    
         System.out.println("Bottom Corners: " + solveInstructions);
         solveInstructions.append(solveMiddleEdges());
@@ -534,7 +533,7 @@ public class RubiksCube {
         } else if (cube.get(30) == frontColor && cube.get(31) == rightColor) {
             algorithm.append("LIKINUBUUGUFURIT");
         } else if (cube.get(31) == frontColor && cube.get(30) == rightColor) {
-            algorithm.append("LIKINUBURITIGIF");
+            algorithm.append("LIKINUBURITIGUF");
         } else if (cube.get(33) == frontColor && cube.get(22) == rightColor) {
             algorithm.append("KULUFIGIRITIGUF");
         } else if (cube.get(22) == frontColor && cube.get(33) == rightColor) {
@@ -912,16 +911,18 @@ public class RubiksCube {
 
         if (numEdgesOriented() == 0) {
             algorithm.append(orientTopEdgesClockwiseAlgorithm());
-        } else if (numEdgesOriented() == 1) {
+        }
+        
+        if (numEdgesOriented() == 1) {
             while(cube.get(16) != cube.get(17)) {
                 U();
                 algorithm.append("U ");
             }
 
             if (cube.get(11) == cube.get(13)) {
-                orientTopEdgesCounterClockwiseAlgorithm();
+                algorithm.append(orientTopEdgesCounterClockwiseAlgorithm());
             } else {
-                orientTopEdgesClockwiseAlgorithm();
+                algorithm.append(orientTopEdgesClockwiseAlgorithm());
             }
         }
 
@@ -1001,7 +1002,7 @@ public class RubiksCube {
         return algorithm;
     }
 
-    private boolean cubeSolved() {
+    public boolean cubeSolved() {
         StringBuffer solvedPosition = new StringBuffer();
 
         for (int i = 1; i <= 54; i++) {
@@ -1035,12 +1036,8 @@ public class RubiksCube {
                 solvedPosition.append(bottomColor);
             }
         }
-
-        if (currentOrientation().equals(solvedPosition)) {
-            return true;
-        } else {
-            return false;
-        }
+    
+        return currentOrientation().toString().equals(solvedPosition.toString());
     }
 
     // return the current orientation as a string
