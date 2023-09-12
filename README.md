@@ -1,6 +1,6 @@
 # Rubiks Cube Solver
 The input order is that expressed in the diagram below. In the order given, type a character 'y', 'w', 'b', 'g', 'r', or 'o' for each tile. Then hit enter to submit and a list of moves to solve the cube will be given.
-'''
+```
                    Top
                 1 | 2 | 3
                 ---------
@@ -19,4 +19,4 @@ The input order is that expressed in the diagram below. In the order given, type
                49 | 50 | 51
                ------------
                52 | 53 | 54 
-'''
+```
